@@ -2,11 +2,11 @@
 namespace app\controllers;
 use yii\web\Controller;
 use yii\data\Pagination;
-use app\model\MyCountry;
+use app\models\MyCountry;
 
-class MyCountryController extends Controller
+class CountryController extends Controller
 {
-    public function actionMyIndex()
+    public function actionIndex()
     {
         $query = MyCountry::find();
         $pagination = new Pagination([
