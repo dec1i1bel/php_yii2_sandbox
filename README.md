@@ -1,4 +1,5 @@
 # php_yii2_sandbox
+Tested on local XAMPP server
 ## apps
-### basic
-to start app open /apps/basic/web on server. Tested on local XAMPP server
+- getStarted: /yii2_sandbox/apps/basic/web/
+- saying "hello: /yii2_sandbox/apps/basic/web/index.php?r=site%2Fsay&
