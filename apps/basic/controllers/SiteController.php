@@ -22,7 +22,7 @@ class SiteController extends Controller
       */
     public function actionMySayHello($message = 'Hello')
     {
-      return $this->render('mySayHello', ['message' => $message]);
+      return $this->render('my-say-hello', ['message' => $message]);
     }
 
     /**
