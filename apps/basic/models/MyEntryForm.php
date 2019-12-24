@@ -4,7 +4,7 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 
-class EntryForm extends Model
+class MyEntryForm extends Model
 {
   public $name;
   public $email;
@@ -12,7 +12,7 @@ class EntryForm extends Model
   public function rules()
   {
     return [
-      [['name', 'email'], required],
+      [['name', 'email'], 'required'],
       ['email', 'email'],
     ];
   }

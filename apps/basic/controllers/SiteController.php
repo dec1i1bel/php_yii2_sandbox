@@ -9,7 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use app\models\EntryForm;
+use app\models\MyEntryForm;
 
 class SiteController extends Controller
 {
@@ -28,15 +28,15 @@ class SiteController extends Controller
     /**
      * form to entry name amd email
      */
-    public function actionEntry()
+    public function actionMyEntry()
     {
-        $model = new EntryForm();
-        $model->name = 'vasya';
-        $model->email = 'good';
+        $model = new MyEntryForm();
+        $model->name = 'Mr.Smith';
+        $model->email = 'manager@matrix.net';
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            return $this->render('entry-confirm', ['model' => $model]);
+            return $this->render('my-entry-confirm', ['model' => $model]);
         } else {
-            return $this->render('entry', ['model' => $model]);
+            return $this->render('my-entry', ['model' => $model]);
         }
     }
 

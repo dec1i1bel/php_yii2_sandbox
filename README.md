@@ -3,3 +3,4 @@ Tested on local XAMPP server. Files that I create has prefix 'my', controller cl
 ### apps\basic
 apps from [yii2 documentation](https://www.yiiframework.com/doc/guide/2.0/en)
 - saying "hello: http://hostname/apps/basic/web/index.php?r=site%2Fmy-say-hello&message=Hello+World
+- simple form: http://hostname/apps/basic/web/index.php?r=site%2Fmy-entry
