@@ -40,7 +40,7 @@ class CountryController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         // pagination:
-        
+        $query = Country::find();
 
         return $this->render('index', [
             'searchModel' => $searchModel,
