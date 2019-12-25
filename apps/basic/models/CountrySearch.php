@@ -5,6 +5,7 @@ namespace app\Models;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Country;
+use yii\widgets\BaseListView;
 
 /**
  * CountrySearch represents the model behind the search form of `app\models\Country`.
@@ -46,6 +47,9 @@ class CountrySearch extends Country
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pageSize' => 4,
+            ]
         ]);
 
         $this->load($params);
