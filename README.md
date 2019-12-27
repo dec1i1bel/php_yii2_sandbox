@@ -1,4 +1,6 @@
-_in progress: editable list of messages in specified bootstrap form_
+__CURRENT WORK :: create with bootstrap:__
+- entry form in @app\views\my-entry.php. look at ActiveForm options in yii2 api docs
+- result message, like comment, in @app\views\my-entry-confirm.php
 
 # php_yii2_sandbox
 Tested on local XAMPP server. To make it work, please put files to the XAMPP htdocs. "http://hostname/" from links below will be path/to/directory/with/files/from/this/repository. For example, if you put the files to the local "xampp_path\htdocs\some\apps", than "http://hostname/" will meet "http://localhost/some/apps/".
