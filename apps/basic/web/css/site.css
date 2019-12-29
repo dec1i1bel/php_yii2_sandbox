@@ -113,7 +113,7 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
-.form-group {
+.width50percent {
     width: 50%;
     margin: 0 auto;
 }

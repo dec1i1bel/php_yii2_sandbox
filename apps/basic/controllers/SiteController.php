@@ -28,6 +28,7 @@ class SiteController extends Controller
     /**
      * form to entry name amd email
      */
+    // public $options = ['class' => 'test-class'];
     public function actionMyEntry()
     {
         $model = new MyEntryForm();
