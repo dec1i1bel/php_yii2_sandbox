@@ -4,7 +4,7 @@ Tested on local XAMPP server. To make it work, put files to the XAMPP htdocs. "h
 ## apps\
   - __\basic__
     - saying "hello: http://hostname/apps/basic/web/index.php?r=site%2Fmy-say-hello&message=Hello+World
-    - simple form: http://hostname/apps/basic/web/index.php?r=site%2Fmy-entry
+    - simple form with user photo uploading and redirection to output: http://hostname/apps/basic/web/index.php?r=site%2Fmy-entry
     - editable list of items from database with pagination: http://hostname/apps/basic/web/index.php?r=country%2Findex
     - editable list of messages: http://hostname/apps/basic/web/index.php?r=messages%2Findex
     - uploading file form: http://hostname/apps/basic/web/index.php?r=site%2Fupload . only .png and .jpg are allowed

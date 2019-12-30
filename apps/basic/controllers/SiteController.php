@@ -26,7 +26,6 @@ class SiteController extends Controller
     /**
      * form to entry name amd email
      */
-    // public $options = ['class' => 'test-class'];
     public function actionMyEntry()
     {
         $model = new MyEntryForm();
@@ -35,11 +34,11 @@ class SiteController extends Controller
         $model->message = 'Hot Friday! 50% for Matrix!';
 
         // if(Yii::$app->request->isPost) {
-            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-        // }
-
-        // if ($model->load(Yii::$app->request->post()) && $model->validate()) {      
+            // }
+            
+            // if ($model->load(Yii::$app->request->post()) && $model->validate()) {      
         if ($model->load(Yii::$app->request->post())) {      
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
             return $this->render('my-entry-confirm', ['model' => $model]);
         } else {
             return $this->render('my-entry', ['model' => $model]);
