@@ -19,6 +19,3 @@ Tested on local XAMPP server. To make it work, put files to the XAMPP htdocs. "h
     - _make it work_
   - [-] create uploading photos for a single comment
 - [-] publish result to hosting
-
-## then (separate repo)
-Items catalog with forms to add and filter items
