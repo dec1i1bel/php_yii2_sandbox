@@ -1,10 +1,11 @@
 <?php
 use yii\helpers\Html;
 ?>
+<?php var_dump($model) ?>
 <div class="card mb-3" style="max-width: 450px;">
   <div class="row no-gutters">
     <div class="col-md-2">
-      <img src="..." class="card-img" alt="...">
+      <img src="uploads/<?= Html::encode($model->imageFile) ?>" class="card-img" alt="user photo">
     </div>
     <div class="col-md-10">
       <div class="card-body">

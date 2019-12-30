@@ -33,7 +33,13 @@ class SiteController extends Controller
         $model->name = 'Mr.Smith';
         $model->email = 'manager@matrix.net';
         $model->message = 'Hot Friday! 50% for Matrix!';
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+
+        // if(Yii::$app->request->isPost) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+        // }
+
+        // if ($model->load(Yii::$app->request->post()) && $model->validate()) {      
+        if ($model->load(Yii::$app->request->post())) {      
             return $this->render('my-entry-confirm', ['model' => $model]);
         } else {
             return $this->render('my-entry', ['model' => $model]);
