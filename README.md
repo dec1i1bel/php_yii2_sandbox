@@ -7,7 +7,7 @@ Tested on local XAMPP server. To make it work, put files to the XAMPP htdocs. "h
     - simple form: http://hostname/apps/basic/web/index.php?r=site%2Fmy-entry
     - editable list of items from database with pagination: http://hostname/apps/basic/web/index.php?r=country%2Findex
     - editable list of messages: http://hostname/apps/basic/web/index.php?r=messages%2Findex
-    - uploading file form: http://hostname/apps/basic/web/index.php?r=site%2Fupload
+    - uploading file form: http://hostname/apps/basic/web/index.php?r=site%2Fupload . only .png and .jpg are allowed
 
 ## current work
 
