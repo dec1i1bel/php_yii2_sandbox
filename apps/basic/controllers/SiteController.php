@@ -3,20 +3,18 @@
 namespace app\controllers;
 
 use Yii;
-use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
+use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\MyEntryForm;
+use app\models\UploadForm;
+use yii\web\UploadedFile;
 
 class SiteController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-
      /**
       * prints "hello world"
       */
@@ -39,6 +37,21 @@ class SiteController extends Controller
         } else {
             return $this->render('my-entry', ['model' => $model]);
         }
+    }
+
+    /**
+     * uploading file within my-entry form
+     */
+    public function actionUpload()
+    {
+        $model = new UploadForm();
+        if(Yii::$app->request->isPost) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            if($model->upload()) {
+                return;
+            }
+        }
+        return $this->render('upload', ['model' => $model]);
     }
 
     /**

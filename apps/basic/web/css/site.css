@@ -113,7 +113,7 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
-.width50percent {
+.card-sizing-alignment {
     width: 50%;
     margin: 0 auto;
 }
