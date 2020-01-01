@@ -1,3 +1,6 @@
+__toDo__
+- [ ] import phpMyAdmin DB to hosting
+
 # php_yii2_sandbox
 Tested on local XAMPP server and my hosting.
 
