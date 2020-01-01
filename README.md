@@ -1,5 +1,5 @@
 # php_yii2_sandbox
-Tested on local XAMPP server. To make it work, put files to the XAMPP htdocs. "http://hostname/" from links below will be path/to/directory/with/files/from/this/repository. For example, if you put the files to the local "xampp_path\htdocs\some\apps", than "http://hostname/" will meet "http://localhost/some/apps/". Also import database from the file in this repo
+Tested on local XAMPP server and my hosting.
 
 ## apps\
   - __\basic__
