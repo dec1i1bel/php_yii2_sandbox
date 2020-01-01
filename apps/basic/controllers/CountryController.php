@@ -3,11 +3,11 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Country;
 use app\Models\CountrySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\Country;
 
 /**
  * CountryController implements the CRUD actions for Country model.

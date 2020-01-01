@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "my_country".
@@ -11,7 +12,7 @@ use Yii;
  * @property string $name
  * @property int $population
  */
-class Country extends \yii\db\ActiveRecord
+class Country extends ActiveRecord
 {
     /**
      * {@inheritdoc}
