@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Дек 27 2019 г., 17:33
+-- Время создания: Янв 02 2020 г., 09:50
 -- Версия сервера: 10.4.6-MariaDB
 -- Версия PHP: 7.1.32
 
@@ -39,7 +39,8 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`message_id`, `username`, `message`) VALUES
-(1, 'dec1i1bel', 'hello world');
+(1, 'dec1i1bel', 'hello world'),
+(2, 'bhjfbhfr', 'juigofvehfri frhiferhu  rete');
 
 -- --------------------------------------------------------
 
@@ -63,6 +64,7 @@ INSERT INTO `my_country` (`code`, `name`, `population`) VALUES
 ('CA', 'Canada', 35985751),
 ('CN', 'China', 1375210000),
 ('DE', 'Germany', 81459000),
+('fg', 'blabla country', 45424),
 ('FR', 'France', 64513242),
 ('GB', 'United Kingdom', 65097000),
 ('gg', 'ggrtgtr', 53545),
@@ -94,7 +96,7 @@ ALTER TABLE `my_country`
 -- AUTO_INCREMENT для таблицы `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `message_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `message_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
