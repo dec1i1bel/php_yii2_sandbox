@@ -1,8 +1,9 @@
-_in progress_
-search, like in countries list. to begin, build search in GridView with defaults
+### __*in progress*__
+  
+  search, like in countries list. to begin, build search in GridView as a table string (default)
 
 # php_yii2_sandbox
-Tested on local XAMPP server and my hosting.
+  Tested on local XAMPP server and my hosting.
 
 ## apps\
   - __\basic__
