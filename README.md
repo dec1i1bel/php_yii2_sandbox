@@ -1,3 +1,6 @@
+_in progress_
+search, like in countries list. to begin, build search in GridView with defaults
+
 # php_yii2_sandbox
 Tested on local XAMPP server and my hosting.
 
