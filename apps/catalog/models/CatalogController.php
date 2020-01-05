@@ -1,10 +1,10 @@
 <?php
 
-namespace app\controllers;
+namespace app\Models;
 
 use Yii;
-use app\models\Catalog;
-use app\models\CatalogSearch;
+use app\Models\Catalog;
+use app\Models\CatalogSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

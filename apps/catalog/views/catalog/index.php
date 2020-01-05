@@ -1,35 +1,32 @@
 <?php
+
 use yii\helpers\Html;
-use yii\widgets\LinkPager;
+use yii\widgets\ListView;
+
+/* @var $this yii\web\View */
+/* @var $searchModel app\models\CatalogSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = 'Catalogs';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<h1>Catalog</h1>
-<div class="main-container">
-  <div class="items-filter-wrapper">
-  
-  </div>
-  <div class="items-list wrapper">
-    <div class="pagination-container">
-      <?= LinkPager::widget(['pagination' => $pagination]) ?>
-    </div>
-    <div class="items-container">
-      <?php foreach ($items as $item): ?>
-        <div class="item-container">
-          <div class="item-photo">
-            <img src="<?= Html::encode("{$item->photo}") ?>" alt="<?= Html::encode("{$item->name}") ?>" />
-          </div>
-          <div class="item-description">
-            <h5 class="title"><?= Html::encode("{$item->name}") ?></h5>
-            <p class="description"><?= Html::encode("{$item->description}") ?></p>
-            <p class="price"><?= Html::encode("{$item->price}") ?> руб.</p>
-          </div>
-          <div class="item-button-order">
-            <?= yii\bootstrap\Button::widget(['label' => 'Add to cart', 'options' => ['class' => 'btn btn-danger', 'disabled' => 'disabled']]) ?>
-          </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
-    <div class="pagination-container">
-      <?= LinkPager::widget(['pagination' => $pagination]) ?>
-    </div>
-  </div>
+<div class="catalog-index">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>
+        <?= Html::a('Create Catalog', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+
+    <?php echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <?= ListView::widget([
+        'dataProvider' => $dataProvider,
+        'itemOptions' => ['class' => 'item'],
+        'itemView' => function ($model, $key, $index, $widget) {
+            return Html::a(Html::encode($model->name), ['view', 'id' => $model->id]);
+        },
+    ]) ?>
+
+
 </div>
