@@ -4,6 +4,7 @@
 ## apps\
   - ## __\catalog__
     _Yii2 installed via Composer_
+
     - [catalog if items with search](http://dec1i1bel.space/yii2_sandbox/apps/catalog/web/index.php?r=catalog%2Findex)
   ### _in progress_
   - [ ] pagination
@@ -11,6 +12,7 @@
 
   - ## __\basic__
   _Yii2 installed manually_
+  
     - [hello world](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fmy-say-hello&message=Hello+World)
     - [user comment input form (text fields and photo) with redirection to output](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fmy-entry)
     - [editable list of items from database with pagination](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=country%2Findex)
