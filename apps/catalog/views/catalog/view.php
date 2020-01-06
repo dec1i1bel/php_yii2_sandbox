@@ -10,9 +10,6 @@ $this->title = $model->name;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="catalog-view">
-
-    <!-- <h1><?= Html::encode($this->title) ?></h1> -->
-
     <div class="item-container">
         <div class="item-photo">
             <img src="<?= Html::encode("{$model->photo}") ?>" alt="<?= Html::encode("{$model->name}") ?>" />
