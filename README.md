@@ -5,9 +5,9 @@
   - ## __\catalog__
     _Yii2 installed via Composer_
     - [catalog if items with search](http://dec1i1bel.space/yii2_sandbox/apps/catalog/web/index.php?r=catalog%2Findex)
-    ### *in progress*
-      - [ ] pagination
-      - [ ] admin panel with addition/removal of elements
+  ### _in progress_
+  - [ ] pagination
+  - [ ] admin panel with addition/removal of elements
 
   - ## __\basic__
   _Yii2 installed manually_
