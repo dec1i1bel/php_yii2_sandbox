@@ -126,11 +126,11 @@ a.desc:after {
 }
 
 .items-filter-wrapper {
-    width: 30%;
+    width: 20%;
 }
 
 .items-container {
-    width: 70%;
+    width: 80%;
 }
 
     #w1.list-view {
@@ -143,17 +143,20 @@ a.desc:after {
             top: -10px;
         }
         #w1.list-view .item {
-        width: 30%;
-        margin: 10px 10px;
-        padding: 10px;
-        border: 1px solid lightgray;
-    }
+            width: 284px;
+            margin: 10px 10px;
+            padding: 10px;
+            border: 1px solid lightgray;
+        }
 
         .item-photo {
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item-photo img {
+            width: 220px;
         }
 
         .item-description > .description {
