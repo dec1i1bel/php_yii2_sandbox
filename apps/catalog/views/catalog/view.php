@@ -7,34 +7,23 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Catalog */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Catalogs', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="catalog-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <!-- <h1><?= Html::encode($this->title) ?></h1> -->
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
-
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'name:ntext',
-            'photo',
-            'price',
-            'description:ntext',
-        ],
-    ]) ?>
-
+    <div class="item-container">
+        <div class="item-photo">
+            <img src="<?= Html::encode("{$model->photo}") ?>" alt="<?= Html::encode("{$model->name}") ?>" />
+        </div>
+        <div class="item-description">
+            <h3 class="title"><?= Html::encode("{$this->title}") ?></h3>
+            <p class="description"><?= Html::encode("{$model->description}") ?></p>
+            <p class="price"><?= Html::encode("{$model->price}") ?> руб.</p>
+            </div>
+        <div class="item-button-order">
+            <?= yii\bootstrap\Button::widget(['label' => 'Add to cart', 'options' => ['class' => 'btn btn-danger', 'disabled' => 'disabled']]) ?>
+        </div>
+    </div>
 </div>
