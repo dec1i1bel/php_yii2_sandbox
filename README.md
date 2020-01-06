@@ -1,5 +1,5 @@
 ### __*in progress*__
-  search, like in countries list. use GridView, so as it has pagination and sorting, also allows customizing single element view. [stackoverflow](https://stackoverflow.com/questions/45539593/how-to-change-gridview-format-in-yii2)
+Catalog->pagination
 
 # php_yii2_sandbox
   Tested on local XAMPP server and my hosting.
