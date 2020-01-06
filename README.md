@@ -1,6 +1,3 @@
-### __*in progress*__
-Catalog->pagination
-
 # php_yii2_sandbox
   Tested on local XAMPP server and my hosting.
 
@@ -15,3 +12,8 @@ Catalog->pagination
 
   - __catalog__
   _Yii2 installed via Composer_
+    ### __*in progress*__
+    - [ ] pagination
+    - [ ] admin panel with addition/removal items
+    - [ ] change header and footer views
+    - [ ] add search by type of an item
