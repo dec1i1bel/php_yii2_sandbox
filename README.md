@@ -14,4 +14,3 @@ In the "apps" folder there are "basic" and "catalog" subfolders. The former cons
   - [user comment input form (text fields and photo) with redirection to output](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fmy-entry)
   - [editable list of items from database with pagination](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=country%2Findex)
   - [editable list of messages](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=messages%2Findex)
-  - [uploading file form](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fupload) (only .png and .jpg are allowed)
