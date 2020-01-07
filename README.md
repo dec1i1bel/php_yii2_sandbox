@@ -1,17 +1,14 @@
 _Tested on local XAMPP server and my hosting_
+In the "apps" folder there are "basic" and "catalog" subfolders. The former consists of several simple apps, and Yii2 was installed manually. The second is catalog of items, Yii2 was installed via Composer. Look at the links below
 
 # apps\
   ### __\catalog__
-_Yii2 installed via Composer_
-
   - [catalog if items with search](http://dec1i1bel.space/yii2_sandbox/apps/catalog/web/index.php?r=catalog%2Findex)
   #### _in progress_
   - [ ] pagination
   - [ ] admin panel with addition/removal of elements
 
   ### __\basic__
-  _Yii2 installed manually_
-
   - [hello world](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fmy-say-hello&message=Hello+World)
   - [user comment input form (text fields and photo) with redirection to output](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fmy-entry)
   - [editable list of items from database with pagination](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=country%2Findex)

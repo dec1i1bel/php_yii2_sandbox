@@ -7,6 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Catalog */
 
 $this->title = $model->name;
+// $this->title = 'Catalog';
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="catalog-view">
