@@ -6,9 +6,6 @@ In the "apps" folder there are "basic" and "catalog" subfolders. The former cons
   ### __\catalog__
   - [catalog if items with search](http://dec1i1bel.space/yii2_sandbox/apps/catalog/web/index.php?r=catalog%2Findex)
   - [admin panel, addition, removal and editing is avialable]
-  #### _in progress_
-  - [v] pagination
-  - [v] admin panel with addition/removal/editing of elements
 
   ### __\basic__
   - [hello world](http://dec1i1bel.space/yii2_sandbox/apps/basic/web/index.php?r=site%2Fmy-say-hello&message=Hello+World)
