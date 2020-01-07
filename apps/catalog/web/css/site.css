@@ -163,3 +163,8 @@ a.desc:after {
         height: 200px;
         overflow-y: scroll;
         }
+        .list-view .pagination {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }        
