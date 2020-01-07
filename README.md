@@ -1,6 +1,6 @@
 _Tested on local XAMPP server and my hosting_
 
-_Header and footer of the apps is from basic Yii2 template, I haven't yet changed it_
+_Header and footer of the apps are from basic Yii2 template, I haven't yet changed it_
 
 In the "apps" folder there are "basic" and "catalog" subfolders. The former consists of several simple apps, and Yii2 was installed manually. The latter is catalog of items, Yii2 was installed via Composer. Look at the links below
 
