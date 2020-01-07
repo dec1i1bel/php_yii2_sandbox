@@ -46,6 +46,9 @@ class CatalogSearch extends Catalog
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pagesize' => 6,
+            ]
         ]);
 
         $this->load($params);
