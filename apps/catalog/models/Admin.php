@@ -13,7 +13,7 @@ use Yii;
  * @property int $price
  * @property string $description
  */
-class Catalog extends \yii\db\ActiveRecord
+class Admin extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
